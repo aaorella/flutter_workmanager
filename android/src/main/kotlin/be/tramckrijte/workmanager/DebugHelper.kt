@@ -43,12 +43,9 @@ object DebugHelper {
         postNotification(
             ctx,
             threadIdentifier,
-            "${ThumbnailGenerator.workEmoji} $currentTime",
+            "Fleetflex",
             """
-                    • Result: ${ThumbnailGenerator.mapResultToEmoji(result)} ${result.javaClass.simpleName}
-                    • dartTask: $dartTask
-                    • inputData: ${payload ?: "not found"}
-                    • Elapsed time: ${mapMillisToSeconds(fetchDuration)}
+                    • Is running
             """.trimIndent()
         )
     }
