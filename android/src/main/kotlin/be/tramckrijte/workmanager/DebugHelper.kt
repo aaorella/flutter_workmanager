@@ -62,15 +62,9 @@ object DebugHelper {
         postNotification(
             ctx,
             threadIdentifier,
-            "${ThumbnailGenerator.workEmoji} $currentTime",
+            "Fleetflex",
             """
-                • dartTask: $dartTask
-                • inputData: ${payload ?: "not found"}
-                • callbackHandle: $callbackHandle 
-                • callBackName: ${callbackInfo?.callbackName ?: "not found"}
-                • callbackClassName: ${callbackInfo?.callbackClassName ?: "not found"}
-                • callbackLibraryPath: ${callbackInfo?.callbackLibraryPath ?: "not found"}
-                • dartBundlePath: $dartBundlePath"
+                    • Is running
             """.trimIndent()
 
         )
